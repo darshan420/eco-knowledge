@@ -8,7 +8,8 @@ export default{
     
 }
 
- export const Primary = () =>  <Button colorScheme="blue">Primary</Button>
+ export const Primary = () =>   <Button  colorScheme="teal" variant="solid">Button</Button>
 //  export const Secondary = () => <Button variant='secondary'>Secondary</Button>
 //  export const Success = () => <Button variant='success'>Success</Button>
 // export const Danger = () => <Button variant='danger'>Danger</Button>
+
