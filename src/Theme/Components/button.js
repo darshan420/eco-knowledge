@@ -2,8 +2,8 @@
 const Button = {
     // The styles all button have in common
     baseStyle: {
-        fontWeight: "400",
-        borderRadius:"2px"
+        fontWeight: "500",
+        borderRadius:"4px"
     },
     // 3 sizes: sm, md(default), lg
     sizes: {
@@ -32,11 +32,11 @@ const Button = {
     // 3 variants: primary(solid), default, dashed
     variants: {
         primary:{
-            color:"gray.1",
+            color:"gray.50",
         },
         default:{
             border:"1px solid ",
-            borderColor:"gray.5"
+            borderColor:"gray.300"
             
         },
         dashed:{
