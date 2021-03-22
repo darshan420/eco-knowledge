@@ -11,30 +11,29 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 
-const ConfirmationModal = () => {
+const ConfirmationDeleteModal = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <>
-      <Button onClick={onOpen} variant="primary" bg="dayBreakBlue.6" size="lg">
+      <Button onClick={onOpen} variant="primary" bg="gray.400" size="md">
         Open
       </Button>
-      
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay bg="rgba(61, 77, 81, 0.3)" />
         <ModalContent
           borderRadius="4px"
-          padding="32px 32px"
+          p={["10px","32px"]}
           maxWidth="704px"
-          width="704px"
+          w={[400,704]}
           height="246px">
 
           <ModalHeader p="0 0 8px 0">
-              <Text textStyle="Body.b1" color="gray.600">
+              <Text textStyle="Body.b1" color="gray.600" >
                 Are you sure you would like to delete this note?
               </Text>
           </ModalHeader>
 
-          <ModalBody p="0 0 0 16px" >
+          <ModalBody p="0 0 0 " pl={["10px","16px"]} >
             <Text
               textStyle="Body.b2"
              color="gray.500">
@@ -45,11 +44,13 @@ const ConfirmationModal = () => {
           </ModalBody>
 
           {/* Modal Footer */}
-          <ModalFooter p="0 0 0 0px">
+          <ModalFooter p="0">
             <Button
               bg="gray.500"
               color="gray.50"
               mr="24px"
+              w="76px"
+              h="32px"
               fontStyle="italic"
               onClick={onClose}
               >
@@ -70,4 +71,4 @@ const ConfirmationModal = () => {
   );
 };
 
-export default ConfirmationModal;
+export default ConfirmationDeleteModal;
