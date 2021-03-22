@@ -6,7 +6,6 @@ import Button from "./Components/button"
 import typography from "./typography"
 import textStyles from "./textStyle"
 
-console.log(chakraTheme);
 
 const overrides = {
     ...chakraTheme,

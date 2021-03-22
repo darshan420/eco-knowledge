@@ -2,53 +2,48 @@
 const Button = {
     // The styles all button have in common
     baseStyle: {
-        fontWeight: "500",
-        borderRadius:"4px"
+        fontWeight: "medium",
+        fontSize:"14px",
+        lineHeight:"16px",
     },
     // 3 sizes: sm, md(default), lg
     sizes: {
       sm:{
-        lineHeight:"24px",
-        width: "60px",
-        height: "24px",
-        padding:"1px 8px",
-        fontSize:"14px"
+        width: "111px",
+        height: "32px",
+        padding:"8px 16px",
+      
       },
       md:{
-        fontSize:"14px",
-        lineHeight:"22px",
-        width: "76px",
+        width: "127px",
         height: "32px",
-        padding:"5px  16px"
+        padding:"12px  24px"
       },
+
       lg:{
-        fontSize:"16px",
-        lineHeight:"24px",
-        width: "83px",
-        height: "40px",
-        padding:"8px  16px"
+        width: "143px",
+        height: "48px",
+        padding:"16px  32px"
       }
     },
-    // 3 variants: primary(solid), default, dashed
+    // 3 variants: primary(solid), secondary , tertiary
     variants: {
         primary:{
+            bg:"primaryTeal.600",
             color:"gray.50",
+            fontWeight:"medium",
+            borderRadius:"4px"
         },
-        default:{
-            border:"1px solid ",
-            borderColor:"gray.300"
+        secondary:{
+            border:"2px solid",
+            borderColor:"primaryTeal.600"
             
         },
-        dashed:{
-            border:"1px dashed",
-            borderColor:"dustRed.6"
-        }
     },
     // The default size and variant values
     defaultProps: {
-        size: "md",
-        variant: "default",
-        
+        variant: "primary",
+        size:"md"
        
     },
   }
